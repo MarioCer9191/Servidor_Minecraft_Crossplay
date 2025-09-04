@@ -1,0 +1,78 @@
+quests:
+  1:
+    name: "&cCazador de Enderman"
+    menu_item: ENDER_PEARL
+    description:
+      - "&7Mata &c15 Enderman &7sin morir."
+      - "&7Recibe &e$2000 &7y 3 perlas."
+    quest_type: KILL
+    required_entity: ENDERMAN
+    required_amount: 15
+    reward:
+      reward_type: COMMAND
+      commands:
+        - eco give %player% 2000
+        - give %player% ender_pearl 3
+
+  2:
+    name: "&4Minería de riesgo"
+    menu_item: TNT
+    description:
+      - "&7Rompe &c10 bloques de obsidiana &7en zonas peligrosas."
+      - "&7Recibe &b4 diamantes &7y experiencia."
+    quest_type: BREAK
+    required_item: OBSIDIAN
+    required_amount: 10
+    reward:
+      reward_type: COMMAND
+      commands:
+        - give %player% diamond 4
+        - give %player% experience_bottle 8
+
+  3:
+    name: "&5Maestro encantador"
+    menu_item: ENCHANTING_TABLE
+    description:
+      - "&7Consigue &d3 libros encantados &7de nivel alto."
+      - "&7Recibe &e$1500 &7y una manzana dorada."
+    quest_type: GET
+    required_item: ENCHANTED_BOOK
+    required_amount: 3
+    reward:
+      reward_type: COMMAND
+      commands:
+        - eco give %player% 1500
+        - give %player% golden_apple 1
+
+  4:
+    name: "&6Explorador del abismo"
+    menu_item: END_STONE
+    description:
+      - "&7Llega al punto &6(x:5000, z:-5000) &7en el End."
+      - "&7Recibe &b$2500 &7y 5 bloques de diamante."
+    quest_type: LOCATION
+    world: world_the_end
+    x: 5000
+    y: 70
+    z: -5000
+    radius: 15
+    reward:
+      reward_type: COMMAND
+      commands:
+        - eco give %player% 2500
+        - give %player% diamond_block 5
+
+  5:
+    name: "&cAsesino de jefes"
+    menu_item: WITHER_SKELETON_SKULL
+    description:
+      - "&7Mata &c1 Wither &7y sobrevive."
+      - "&7Recibe &6$5000 &7y una estrella del Nether."
+    quest_type: KILL
+    required_entity: WITHER
+    required_amount: 1
+    reward:
+      reward_type: COMMAND
+      commands:
+        - eco give %player% 5000
+        - give %player% nether_star 1

@@ -1,0 +1,313 @@
+cooldown: '&6⚓ Espera &7%time% segundos antes de colocar otra piedra de protección.'
+no_such_command: '&cEse comando no existe. Usa &e/ps ayuda &cpara ver las opciones disponibles.'
+no_access: '&cNo tienes permiso para realizar esa acción en esta zona protegida.'
+no_room_in_inventory: '&cTu inventario está lleno. No puedes recibir más objetos.'
+no_room_dropping_on_floor: '&cTu inventario está lleno. El objeto ha sido arrojado al suelo.'
+invalid_block: '&cEste bloque no es válido como piedra de protección.'
+not_enough_money: '&cNo tienes suficiente oro. El precio es &e$%price%.'
+paid_money: '&bHas pagado &e$%price% &bpor tu parcela.'
+invalid_world: '&cEste mundo no permite protecciones.'
+must_be_player: '&cSolo los viajeros pueden ejecutar este comando.'
+go_back_page: '← Página anterior'
+go_next_page: '→ Página siguiente'
+page_does_not_exist: '&cEsa página no existe en el códice de comandos.'
+help: |-
+  &8&m=====&r &bGuía de Protecciones &8&m=====
+  &b> &7/ps ayuda — Comandos disponibles
+help_next: '&7Usa &e/ps ayuda %page% &7para ver la siguiente página.'
+command_requires_player_name: '&cEste comando requiere el nombre de un viajero.'
+no_permission_create: '&cNo tienes permiso para colocar piedras de protección.'
+no_permission_create_specific: '&cNo puedes colocar este tipo de piedra de protección.'
+no_permission_destroy: '&cNo tienes permiso para destruir piedras de protección.'
+no_permission_merge: '&cNo tienes permiso para fusionar regiones.'
+psregion:
+  added_to_region: '&b%player%&7 ha sido añadido como miembro de esta parcela.'
+  added_to_region_specific: '&b%player%&7 ha sido añadido a la parcela &e%region%.'
+  removed_from_region: '&b%player%&7 ha sido removido de esta parcela.'
+  removed_from_region_specific: '&b%player%&7 ha sido removido de la parcela &e%region%.'
+  not_in_region: '&cNo estás dentro de una parcela protegida.'
+  protected: '&bEsta zona ahora está protegida por el legado de Odiseo.'
+  no_longer_protected: '&eEsta zona ya no está protegida.'
+  reached_region_limit: '&cHas alcanzado el límite de parcelas protegidas (%limit%).'
+  region_overlap: '&cNo puedes colocar aquí: se superpone con otra parcela.'
+  region_too_close: '&cDebes colocar tu piedra al menos a %num% bloques del borde de otra parcela.'
+  region_not_adjacent: '&cHas superado el límite de parcelas no adyacentes. Coloca más cerca de tus dominios.'
+  hidden: '&7La piedra de protección ha sido ocultada bajo tierra.'
+  not_owner: '&cNo eres el propietario de esta parcela.'
+cannot_remove_yourself_all_regions: '&cPor seguridad, no puedes eliminarte de todas tus parcelas al mismo tiempo.'
+
+toggle:
+  help: '&b> &7/ps alternar|on|off'
+  help_desc: Usa este comando para activar o desactivar la colocación de piedras de protección.
+  toggle_on: '&bColocación de piedras de protección activada.'
+  toggle_off: '&bColocación de piedras de protección desactivada.'
+
+count:
+  count_help: '&b> &7/ps contar [jugador (opcional)]'
+  count_help_desc: Muestra cuántas parcelas posee un jugador.
+  personal_region_count: '&7Tus parcelas en este mundo: &b%num%'
+  personal_region_count_merged: '&7- Incluyendo regiones fusionadas: &b%num%'
+  other_region_count: '&7Parcelas de %player% en este mundo: &b%num%'
+  other_region_count_merged: '&7- Incluyendo regiones fusionadas: &b%num%'
+
+flag:
+  help: '&b> &7/ps bandera [nombre] [valor|null|default]'
+  help_desc: Usa este comando para establecer una bandera en tu parcela protegida.
+  flag_set: '&bLa bandera &e%flag%&7 ha sido establecida.'
+  flag_not_set: '&bLa bandera &e%flag%&7 &cno&7 ha sido establecida. Verifica los valores.'
+  flag_prevent_exploit: '&cEsta opción ha sido desactivada para evitar exploits.'
+  flag_prevent_exploit_hover: '&cDesactivada por razones de seguridad.'
+  gui_header: '&8&m=====&r Bandera de Región (haz clic para cambiar) &8&m====='
+  gui_hover_set: '&bHaz clic para establecer.'
+  gui_hover_set_text: |-
+    &bHaz clic para cambiar.&f
+    Valor actual:
+    %value%
+  hover_change_group: Haz clic para aplicar esta bandera solo al grupo %group%.
+  hover_change_group_null: '&cDebes establecer un valor antes de cambiar el grupo.'
+
+rent:
+  help: '&b> &7/ps renta'
+  help_desc: Administra alquileres de parcelas (comprar y vender).
+  help_header: '&8&m=====&r Ayuda de Renta &8&m====='
+  already_renting: '&cEsta parcela ya está siendo alquilada. Debes detener el arrendamiento primero.'
+  not_rented: '&cEsta parcela no está en alquiler.'
+  lease_success: |-
+    &bTérminos de arrendamiento establecidos:
+    &bPrecio: &7%price%
+    &bPeriodo de pago: &7%period%
+  stopped: '&bArrendamiento detenido.'
+  evicted: '&7Inquilino %tenant% ha sido desalojado.'
+  not_renting: '&cEsta parcela no está alquilada a ningún inquilino.'
+  paid_landlord: '&b%tenant%&7 ha pagado &b$%price%&7 por alquilar la parcela &b%region%&7.'
+  paid_tenant: '&7Has pagado &b$%price%&7 a &b%landlord%&7 por la parcela &b%region%&7.'
+  renting_landlord: '&b%player%&7 ahora alquila la parcela &b%region%&7.'
+  renting_tenant: '&7Ahora estás alquilando la parcela &b%region%&7 por &b$%price%&7 cada &b%period%&7.'
+  not_tenant: '&cNo eres el inquilino de esta parcela.'
+  tenant_stopped_landlord: '&b%player%&7 ha detenido el alquiler de la parcela &b%region%&7. Ahora está disponible para otros.'
+  tenant_stopped_tenant: '&bHas dejado de alquilar la parcela %region%.'
+  being_sold: '&cLa parcela está en venta. Usa &e/ps sell stop &cprimero.'
+  evict_no_money_tenant: '&7Has sido &cevacuado&7 de la parcela &b%region%&7 por falta de fondos (%price%).'
+  evict_no_money_landlord: '&b%tenant%&7 ha sido &cevacuado&7 de la parcela &b%region%&7 por no poder pagar la renta.'
+  cannot_rent_own_region: '&cNo puedes alquilar tu propia parcela.'
+  reached_limit: '&cHas alcanzado el límite de parcelas que puedes alquilar.'
+  price_too_low: '&cEl precio de renta es demasiado bajo (debe ser mayor a %price%).'
+  price_too_high: '&cEl precio de renta es demasiado alto (debe ser menor a %price%).'
+  period_too_short: '&cEl periodo de renta es demasiado corto (debe ser mayor a %period% segundos).'
+  period_too_long: '&cEl periodo de renta es demasiado largo (debe ser menor a %period% segundos).'
+  period_invalid: '&cFormato de periodo inválido. Ejemplo: 24h para una vez al día.'
+  cannot_break_while_renting: '&cNo puedes romper la parcela mientras está alquilada.'
+
+tax:
+  help: '&b> &7/ps impuesto'
+  help_desc: Administra y paga impuestos de parcelas.
+  help_header: '&8&m=====&r Ayuda de Impuestos &8&m====='
+  disabled_region: '&cLos impuestos están desactivados para esta parcela.'
+  set_as_autopayer: '&7Los impuestos de la parcela &b%region%&7 serán pagados automáticamente por ti.'
+  set_no_autopayer: '&7Ahora debes pagar manualmente los impuestos de la parcela &b%region%&7.'
+  paid: '&7Has pagado &b$%amount%&7 en impuestos por la parcela &b%region%&7.'
+  info_header: '&8&m=====&r Información Fiscal (clic para más) &8&m====='
+  join_msg_pending_payments: |-
+    &7Tienes &b$%money%&7 en impuestos pendientes por tus parcelas.
+    Revísalos con /ps impuesto info.
+  player_region_info: '&7> &b%region%&7 - &3$%money% pendientes'
+  player_region_info_autopayer: '&7> &b%region%&7 - &3$%money% pendientes&7 (autopago activado)'
+  click_to_show_more_info: Haz clic para ver más información.
+  region_info_header: '&8&m=====&r Información Fiscal de %region% &8&m====='
+  region_info: |-
+    &9Tasa de impuesto: &7$%taxrate% (suma de regiones fusionadas)
+    &9Tiempo entre ciclos: &7%taxperiod%
+    &9Tiempo para pagar después del ciclo: &7%taxpaymentperiod%
+    &9Autopagador: &7%taxautopayer%
+    &9Impuestos pendientes: &7$%taxowed%
+  next_page: '&7Usa /ps impuesto info -p %page% para ver la siguiente página.'
+
+buy:
+  help: '&b> &7/ps comprar'
+  help_desc: Compra la parcela en la que estás actualmente.
+  not_for_sale: '&cEsta parcela no está en venta.'
+  stop_sell: '&7La parcela ya no está en venta.'
+  sold_buyer: '&7Has comprado la parcela &b%region%&7 por &b$%price%&7 a &b%player%&7.'
+  sold_seller: '&7Has vendido la parcela &b%region%&7 por &b$%price%&7 a &b%player%&7.'
+sell:
+  help: '&b> &7/ps vender [precio|stop]'
+  help_desc: Vende la parcela en la que estás actualmente.
+  rented_out: '&cEsta parcela está alquilada. Debes detener el alquiler antes de venderla.'
+  for_sale: '&7La parcela está ahora en venta por &b$%price%&7.'
+
+visibility:
+  hide_help: '&b> &7/ps ocultar'
+  hide_help_desc: Usa este comando para ocultar o mostrar tu piedra de protección.
+  unhide_help: '&b> &7/ps mostrar'
+  unhide_help_desc: Usa este comando para ocultar o mostrar tu piedra de protección.
+  already_not_hidden: '&7La piedra de protección ya está visible...'
+  already_hidden: '&7La piedra de protección ya está oculta...'
+
+info:
+  help: '&b> &7/ps info miembros|propietarios|banderas'
+  help_desc: Usa este comando dentro de una parcela para ver más información.
+  header: '&8&m=====&r Información de Parcela &8&m====='
+  type2: '&9Tipo: &7%type%'
+  may_be_merged: '(puede fusionarse con otros tipos)'
+  merged2: '&9Parcelas fusionadas: &7%merged%'
+  members2: '&9Miembros: &7%members%'
+  no_members: '&c(sin miembros)'
+  owners2: '&9Propietarios: &7%owners%'
+  no_owners: '&c(sin propietarios)'
+  flags2: '&9Banderas: &7%flags%'
+  no_flags: '(ninguna)'
+  region2: '&9Parcela: &b%region%'
+  priority2: '&9Prioridad: &b%priority%'
+  parent2: '&9Parcela superior: &b%parentregion%'
+  bounds_xyz: '&9Límites: &b(%minx%,%miny%,%minz%) → (%maxx%,%maxy%,%maxz%)'
+  bounds_xz: '&9Límites: &b(%minx%, %minz%) → (%maxx%, %maxz%)'
+  seller2: '&9Vendedor: &7%seller%'
+  price2: '&9Precio: &7%price%'
+  tenant2: '&9Inquilino: &7%tenant%'
+  landlord2: '&9Propietario: &7%landlord%'
+  rent2: '&9Renta: &7%rent%'
+  available_for_sale: '&b¡Parcela disponible para la venta!'
+  available_for_rent: '&b¡Parcela disponible para alquiler!'
+
+priority:
+  help: '&b> &7/ps prioridad [número|null]'
+  help_desc: Usa este comando para establecer la prioridad de tu parcela.
+  info: '&7Prioridad actual: %priority%'
+  set: '&ePrioridad establecida.'
+  error: '&cError al interpretar el valor. ¿Está escrito correctamente?'
+
+region:
+  help: '&b> &7/ps parcela [listar|remover|renunciar] [jugador]'
+  help_desc: Usa este comando para ver o editar parcelas protegidas propias o de otros jugadores.
+  not_found_for_player: '&7No se encontraron parcelas para %player% en este mundo.'
+  list: '&7Parcelas de %player% en este mundo: &b%regions%'
+  remove: '&eLas parcelas de %player% han sido eliminadas en este mundo, y ha sido removido como copropietario.'
+  disown: '&e%player% ha sido removido como propietario de todas sus parcelas en este mundo.'
+  error_search: '&cError al buscar parcelas de %player%. Verifica que el nombre esté bien escrito.'
+
+tp:
+  help: '&b> &7/ps tp [id/jugador] [número (opcional)]'
+  help_desc: Te teletransporta a una de las parcelas de un jugador.
+  number_above_zero: '&cIngresa un número mayor a 0.'
+  valid_number: '&cIngresa un número válido.'
+  only_has_regions: '&c%player% solo tiene %num% parcelas protegidas en este mundo.'
+  tping: '&aTeletransportando...'
+  error_name: '&cError al interpretar el nombre de la parcela protegida.'
+  error_tp: '&cNo se pudo encontrar la parcela para teletransportarse.'
+  in_seconds: '&7Teletransportando en &b%seconds%&7 segundos.'
+  cancelled_moved: '&cTeletransporte cancelado. ¡Te has movido!'
+
+home:
+  help: '&b> &7/ps hogar [nombre/id]'
+  help_desc: Te teletransporta a una de tus parcelas protegidas.
+  header: '&8&m=====&r Hogares (haz clic para ir) &8&m====='
+  click_to_tp: Haz clic para teletransportarte.
+  next_page: '&7Usa /ps hogar -p %page% para ver la siguiente página.'
+
+unclaim:
+  help: '&b> &7/ps liberar'
+  help_desc: Usa este comando para recoger tu piedra de protección y eliminar la parcela.
+  header: '&8&m=====&r Liberar Parcela (clic para liberar) &8&m====='
+
+view:
+  help: '&b> &7/ps ver'
+  help_desc: Usa este comando para ver los límites de tu parcela protegida.
+  cooldown: '&cEspera un momento antes de usar /ps ver nuevamente.'
+  generating: '&7Generando bordes...'
+  generate_done: '&a¡Listo! Los bordes desaparecerán en 30 segundos.'
+  removing: |-
+    &bEliminando bordes...
+    &aSi ves bloques fantasmas, reconéctate.
+
+admin:
+  help: '&b> &7/ps admin'
+  help_desc: Usa /ps admin ayuda para más información.
+  cleanup_header: |-
+    &eLimpieza %arg% %days% días
+    ================
+  cleanup_footer: |-
+    &e================
+    Limpieza de %arg% completada.
+  hide_toggled: '&eTodas las piedras de protección han sido %message% en este mundo.'
+  last_logon: '&e%player% jugó por última vez hace %days% días.'
+  is_banned: '&e%player% está baneado.'
+  error_parsing: '&cError al interpretar los días. ¿Es un número válido?'
+  console_world: '&cEspecifica el mundo como último parámetro.'
+  lastlogons_header: |-
+    &eJugadores con más de %days% días de inactividad:
+    ================
+lastlogons_line: '&e%player% hace %time% días'
+lastlogons_footer: |-
+  &e================
+  %count% Viajeros mostrados
+  %checked% Viajeros revisados
+
+reload:
+  help: '&b> &7/ps recargar'
+  help_desc: Recarga la configuración desde el archivo.
+  start: '&bRecargando configuración...'
+  complete: '&b¡Configuración recargada con éxito!'
+
+addremove:
+  help: '&b> &7/ps añadir|remover [jugador]'
+  help_desc: Usa este comando para añadir o remover un miembro de tu parcela protegida.
+  owner_help: '&b> &7/ps añadirpropietario|removerpropietario [jugador]'
+  owner_help_desc: Usa este comando para añadir o remover un propietario de tu parcela protegida.
+  player_reached_limit: '&cEste viajero ha alcanzado el límite de parcelas permitidas.'
+  player_needs_to_be_online: '&cEl viajero debe estar conectado para añadirlo.'
+
+get:
+  help: '&b> &7/ps obtener [bloque]'
+  help_desc: Usa este comando para obtener o comprar una piedra de protección.
+  gotten: '&b¡Piedra de protección añadida al inventario!'
+  no_permission_block: '&cNo tienes permiso para obtener este tipo de piedra.'
+  header: '&8&m=====&r Piedras de Protección (clic para obtener) &8&m====='
+  gui_block: '&7> &b%alias% &7- %description% (&f$%price%&7)'
+  gui_hover: Haz clic para comprar una %alias%!
+
+give:
+  help: '&b> &7/ps entregar [bloque] [jugador] [cantidad (opcional)]'
+  help_desc: Usa este comando para entregar una piedra de protección a otro viajero.
+  given: '&7Has entregado &b%block%&7 a &b%player%&7.'
+  no_inventory_room: '&cEl jugador no tiene suficiente espacio en el inventario.'
+
+sethome:
+  help: '&b> &7/ps establecerhogar'
+  help_desc: Establece el hogar de una parcela en tu ubicación actual.
+  set: '&7El hogar de &b%psid%&7 ha sido establecido en tu ubicación.'
+
+list:
+  help: '&b> &7/ps listar [jugador (opcional)]'
+  help_desc: Muestra las parcelas que tú u otro jugador poseen.
+  header: '&8&m=====&r Parcelas de %player% &8&m====='
+  owner: '&7Propietario de:'
+  member: '&7Miembro de:'
+  no_regions: '&7Actualmente no posees ni eres miembro de ninguna parcela.'
+  no_regions_player: '&b%player% &7no posee ni es miembro de ninguna parcela.'
+
+name:
+  help: '&b> &7/ps nombre [nombre|ninguno]'
+  help_desc: Asigna un nombre a tu parcela para identificarla fácilmente.
+  removed: '&7Nombre eliminado para %id%.'
+  set_name: '&7Nombre asignado a %id% como &b%name%&7.'
+  taken: '&7El nombre &b%name%&7 ya está en uso. Intenta con otro.'
+
+setparent:
+  help: '&b> &7/ps establecerpadre [parcela|ninguno]'
+  help_desc: Permite que esta parcela herede propiedades de otra (propietarios, miembros, banderas, etc.).
+  success: '&7Parcela padre de &b%id%&7 establecida como &b%parent%&7.'
+  success_remove: '&7Parcela padre eliminada de &b%id%&7.'
+  circular_inheritance: '&cHerencia circular detectada. ¿La parcela padre ya hereda de esta? No se ha establecido.'
+
+merge:
+  help: '&b> &7/ps fusionar'
+  help_desc: Fusiona la parcela actual con otras que se superpongan.
+  disabled: ¡La fusión de parcelas está desactivada en la configuración!
+  merged: '&b¡Parcelas fusionadas con éxito!'
+  header: '&8&m=====&r Fusionar %region% (clic para fusionar) &8&m====='
+  warning: '&7Nota: Esto eliminará toda la configuración de la parcela actual.'
+  not_allowed: '&cNo tienes permiso para fusionar este tipo de parcela.'
+  into: '&bEsta parcela se superpone con otras que puedes fusionar.'
+  no_region: '&7No hay parcelas superpuestas para fusionar.'
+  click_to_merge: Haz clic para fusionar con %region%!
+  auto_merged: '&7Parcela fusionada automáticamente con &b%region%&7.'

@@ -1,0 +1,72 @@
+quests:
+  1:
+    name: "&aRecolector de madera"
+    menu_item: OAK_LOG
+    description:
+      - "&7Corta &a20 troncos de roble."
+      - "&7Recibe &e$250 &7por tu esfuerzo."
+    quest_type: BREAK
+    required_item: OAK_LOG
+    required_amount: 20
+    reward:
+      reward_type: MONEY
+      amount: 250
+
+  2:
+    name: "&bCazador de pollos"
+    menu_item: CHICKEN
+    description:
+      - "&7Mata &b10 gallinas."
+      - "&7Obtén &f5 pollos cocidos &7como recompensa."
+    quest_type: KILL
+    required_entity: CHICKEN
+    required_amount: 10
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "give %player% COOKED_CHICKEN 5"
+
+  3:
+    name: "&eExplorador curioso"
+    menu_item: COMPASS
+    description:
+      - "&7Visita el punto &e(x:150, z:-75)."
+      - "&7Recibe &a4 esmeraldas &7por tu curiosidad."
+    quest_type: LOCATION
+    location:
+      world: world
+      x: 150
+      y: 64
+      z: -75
+      radius: 10
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "give %player% EMERALD 4"
+
+  4:
+    name: "&6Recolector de flores"
+    menu_item: POPPY
+    description:
+      - "&7Consigue &c12 amapolas."
+      - "&7Recibe &d2 botellas de experiencia."
+    quest_type: GET
+    required_item: POPPY
+    required_amount: 12
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "give %player% EXPERIENCE_BOTTLE 2"
+
+  5:
+    name: "&dRompe el hielo"
+    menu_item: ICE
+    description:
+      - "&7Rompe &b15 bloques de hielo."
+      - "&7Recibe &e$300 &7por tu valentía."
+    quest_type: BREAK
+    required_item: ICE
+    required_amount: 15
+    reward:
+      reward_type: MONEY
+      amount: 300

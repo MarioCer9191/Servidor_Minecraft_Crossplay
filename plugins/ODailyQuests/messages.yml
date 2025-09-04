@@ -1,0 +1,64 @@
+# NEVER DELETE A %variable%
+# Messages support HEX colours codes.
+
+player_help: |
+  &6&nComandos para jugadores:
+  &e/dq me &7→ &aVer tus misiones activas
+  &e/dq reroll <índice> &7→ &aCambiar una misión (requiere permiso)
+  &e/dq show <easy/medium/hard> &7→ &aVer misiones por categoría
+admin_help: |
+  &c&nComandos para administradores:
+  &e/dqa complete <jugador> <índice> &7→ &aCompleta una misión manualmente
+  &e/dqa customcomplete <jugador> <tipo> <cantidad> &7→ &aCompleta una misión personalizada
+  &e/dqa reset <quests/total> <jugador> &7→ &aReinicia misiones o progreso
+  &e/dqa add total <jugador> <cantidad> &7→ &aAgrega misiones completadas
+  &e/dqa reroll <jugador> <índice> &7→ &aCambia una misión específica
+  &e/dqa show <jugador> &7→ &aVer misiones de un jugador
+no_permission: '&cNo tienes permiso para ejecutar este comando.'
+no_permission_category: '&cNo tienes permiso para ver esta categoría de misiones.'
+player_only: '&cSolo los jugadores pueden ejecutar este comando.'
+invalid_category: '&cCategoría de misión inválida.'
+invalid_player: '&cEse jugador no existe o está desconectado.'
+invalid_quest_id: '&cDebes especificar un ID de misión válido.'
+invalid_quest_index: '&cEl índice de misión especificado no es válido.'
+invalid_amount: '&cLa cantidad especificada no es válida.'
+categorized_enabled: '&eLas misiones por categoría están activadas. El menú global no está disponible.'
+categorized_disabled: '&eLas misiones por categoría están desactivadas. Solo el menú global está disponible.'
+global_disabled: '&eLas misiones globales están desactivadas. Solo los menús por categoría están disponibles.'
+already_achieved: '&cEsta misión ya ha sido completada.'
+hologram_categorized_enabled: '&eLas misiones por categoría están activadas. No se puede crear el holograma global.'
+hologram_categorized_disabled: '&eLas misiones por categoría están desactivadas. No se pueden crear hologramas por categoría.'
+hologram_deleted: '&aHolograma eliminado correctamente.'
+hologram_invalid_index: '&cÍndice inválido para el holograma.'
+quests_in_progress: '&e¡Aún tienes misiones diarias por completar!'
+all_quests_achieved_connect: '&a¡Has completado todas tus misiones diarias!'
+quests_renewed: '&b¡Nuevas misiones disponibles! Prepárate para la aventura.'
+quests_renewed_admin: '&eHas reiniciado las misiones de %target%.'
+quest_rerolled: '&aHas cambiado tu misión número &e%index%&a.'
+quest_rerolled_admin: '&eHas cambiado la misión número &e%index%&e de %target%.'
+add_total_admin: '&eHas agregado &a%amount%&e misiones completadas al total de %target%.'
+add_total_target: '&eUn administrador ha agregado &a%amount%&e misiones completadas a tu total.'
+quest_achieved: '&a¡Has completado la misión &e%questName%&a! Buen trabajo.'
+all_quests_achieved: '&6¡Has completado todas tus misiones diarias! Recompensa desbloqueada.'
+easy_reward: '&a¡Has completado todas tus misiones fáciles! Recompensa entregada.'
+medium_reward: '&e¡Has completado todas tus misiones medianas! Recompensa entregada.'
+hard_reward: '&c¡Has completado todas tus misiones difíciles! Recompensa entregada.'
+not_enough_items: '&cNo tienes la cantidad necesaria para completar esta misión.'
+total_amount_reset: '&eTu total de misiones completadas ha sido reiniciado por un administrador.'
+total_amount_reset_admin: '&eEl total de misiones completadas de %target% ha sido reiniciado por un administrador.'
+world_disabled: '&cNo puedes completar misiones en este mundo.'
+not_required_world: '&cEsta misión no puede completarse en el mundo actual.'
+not_required_region: '&cEsta misión no puede completarse en esta región.'
+reward_command: '&aHas recibido recompensas especiales.'
+reward_exp_levels: '&aHas recibido &e%rewardAmount% &bniveles de experiencia.'
+reward_exp_points: '&aHas recibido &e%rewardAmount% &bpuntos de experiencia.'
+reward_money: '&aHas recibido &e$%rewardAmount%&a.'
+reward_points: '&aHas recibido &e%rewardAmount% &bpuntos de misión.'
+reward_coins_engine: '&aHas recibido &e%rewardAmount% &b%currencyName%&a.'
+new_day: '&6¡Es un nuevo día en La Odisea! Tus misiones han sido renovadas.'
+too_far: '&cEstás demasiado lejos del punto requerido.'
+bad_world: '&cEstás en el mundo equivocado para esta misión.'
+placeholder_api_not_enabled: '&cEl plugin PlaceholderAPI no está habilitado. Contacta a un administrador.'
+placeholder_not_number: '&cEl placeholder %placeholder% no es un número válido. Contacta a un administrador.'
+cannot_complete_quest_with_off_hand: '&cTodos los ítems requeridos deben estar en tu inventario principal, no en la mano secundaria.'
+cannot_reroll_if_achieved: '&cNo puedes cambiar una misión que ya has completado.'

@@ -1,0 +1,10 @@
+Events:
+  event_dar_brújula:
+    type: player_join
+    conditions:
+    - '%player_has_item_in_slot_0% == false'
+  actions:
+    default:
+      - 'console_command: give %player% compass{display:{Name:"\"§6§lBrújula de Ítaca\"",Lore:["\"§7Tu guía en la travesía\"","\"§eHaz clic para abrir el menú\""]}} 1'
+      - 'message: &aBienvenido, viajero %player%. Tu travesía comienza ahora.'
+      - 'playsound: ENTITY_PLAYER_LEVELUP;1;1'

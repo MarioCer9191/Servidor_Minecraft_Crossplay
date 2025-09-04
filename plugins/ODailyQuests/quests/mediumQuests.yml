@@ -1,0 +1,71 @@
+quests:
+  1:
+    name: "&6Cazador nocturno"
+    menu_item: SKELETON
+    description:
+      - "&7Mata &c12 esqueletos &7durante la noche."
+      - "&7Recibe &e$750 &7por tu valentía."
+    quest_type: KILL
+    required_entity: SKELETON
+    required_amount: 12
+    reward:
+      reward_type: MONEY
+      amount: 750
+
+  2:
+    name: "&bExplorador de cuevas"
+    menu_item: TORCH
+    description:
+      - "&7Llega a las coordenadas &b(x:-200, z:85)."
+      - "&7Recibe &a6 esmeraldas &7por tu exploración."
+    quest_type: LOCATION
+    world: world
+    x: -200
+    y: 20
+    z: 85
+    radius: 10
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "give %player% EMERALD 6"
+
+  3:
+    name: "&dRecolector de hierro"
+    menu_item: IRON_INGOT
+    description:
+      - "&7Consigue &f24 lingotes de hierro."
+      - "&7Recibe &b3 botellas de experiencia."
+    quest_type: GET
+    required_item: IRON_INGOT
+    required_amount: 24
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "give %player% EXPERIENCE_BOTTLE 3"
+
+  4:
+    name: "&aRompe el silencio"
+    menu_item: BOOK
+    description:
+      - "&7Rompe &a20 estanterías."
+      - "&7Recibe &e$1000 &7y sabiduría."
+    quest_type: BREAK
+    required_item: BOOKSHELF
+    required_amount: 20
+    reward:
+      reward_type: MONEY
+      amount: 1000
+
+  5:
+    name: "&cCazador de arañas"
+    menu_item: SPIDER_EYE
+    description:
+      - "&7Elimina &c10 arañas &7en zonas oscuras."
+      - "&7Recibe &d2 manzanas doradas."
+    quest_type: KILL
+    required_entity: SPIDER
+    required_amount: 10
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "give %player% GOLDEN_APPLE 2"

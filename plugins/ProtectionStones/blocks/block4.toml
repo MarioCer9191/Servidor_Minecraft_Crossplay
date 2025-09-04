@@ -1,0 +1,125 @@
+type = "EMERALD_ORE"
+alias = "parcela_epica"
+description = "Zona protegida de 64 bloques: legado de Odiseo."
+
+restrict_obtaining = true
+
+world_list_type = "blacklist"
+worlds = [
+    "exampleworld1",
+    "exampleworld2"
+]
+
+prevent_block_place_in_restricted_world = true
+allow_placing_in_wild = true
+placing_bypasses_wg_passthrough = true
+
+[region]
+distance_between_claims = -1
+x_radius = 64
+y_radius = 64
+z_radius = 64
+chunk_radius = -1
+
+home_x_offset = 0.0
+home_y_offset = 1.0
+home_z_offset = 0.0
+
+flags = [
+    "pvp deny",
+    "tnt deny",
+    "creeper-explosion deny",
+    "wither-damage deny",
+    "ghast-fireball deny",
+    "greeting &6⚓ Has entrado en la parcela épica de &b%player%",
+    "farewell &7Has salido de la parcela de &b%player%",
+    "greeting-action &6⚓ Has entrado en la parcela épica de &b%player%",
+    "farewell-action &7Has salido de la parcela de &b%player%"
+]
+
+allowed_flags = [
+    "-g all pvp",
+    "greeting",
+    "greeting-title",
+    "greeting-action",
+    "farewell",
+    "farewell-title",
+    "farewell-action",
+    "mob-spawning",
+    "creeper-explosion"
+]
+
+hidden_flags_from_info = [
+    "ps-name",
+    "ps-merged-regions",
+    "ps-merged-regions-types",
+    "ps-block-material",
+    "ps-price",
+    "ps-landlord",
+    "ps-tenant",
+    "ps-rent-period",
+    "ps-rent-last-paid",
+    "ps-for-sale",
+    "ps-rent-settings",
+    "ps-tax-payments-due",
+    "ps-tax-last-payment-added",
+    "ps-tax-autopayer"
+]
+
+priority = 0
+allow_overlap_unowned_regions = false
+allow_other_regions_to_overlap = "owner"
+allow_merging = true
+allowed_merging_into_types = ["all"]
+
+[block_data]
+display_name = "&a&m<---&r&2 Parcela Épica &r&a&m--->"
+lore = [
+    "&6⚓ Título de propiedad: Parcela Épica",
+    "&7Zona protegida de 64x64x64 bloques.",
+    "&7Ideal para asentamientos, fortalezas y leyendas vivientes."
+]
+enchanted_effect = false
+price = 10000.0
+allow_craft_with_custom_recipe = false
+custom_recipe = []
+recipe_amount = 1
+custom_model_data = -1
+
+[economy]
+tax_amount = 0.0
+tax_period = -1
+tax_payment_time = 86400
+start_with_tax_autopay = true
+tenant_rent_role = "member"
+landlord_still_owner = false
+
+[behaviour]
+auto_hide = false
+auto_merge = false
+no_drop = false
+prevent_piston_push = true
+prevent_explode = true
+destroy_region_when_explode = false
+prevent_silk_touch = false
+cost_to_place = 50000.0
+allow_smelt_item = false
+allow_use_in_crafting = false
+
+[player]
+allow_shift_right_break = false
+prevent_teleport_in = false
+no_moving_when_tp_waiting = true
+tp_waiting_seconds = 0
+prevent_ps_get = false
+prevent_ps_home = false
+permission = ""
+
+[event]
+enable = false
+on_region_create = [
+    "global_message: &7%player% ha reclamado una parcela épica: %region%"
+]
+on_region_destroy = [
+    "console_command: say %player% ha destruido la región %region%"
+]

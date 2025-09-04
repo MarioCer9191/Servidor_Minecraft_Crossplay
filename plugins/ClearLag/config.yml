@@ -1,0 +1,106 @@
+# ====================================================================================================
+# ClearLag Configuration
+# This plugin helps optimize server performance by reducing various sources of lag.
+# ====================================================================================================
+
+# --- Automatic Clear of Items and Entities ---
+auto-clear:
+  # Enables or disables the automatic clear.
+  enabled: true
+  # Interval in seconds at which the automatic clear is executed.
+  # Default: 300 seconds (5 minutes)
+  interval-seconds: 300
+  # Should items be cleared?
+  clear-items: true
+  # Should non-item entities (arrows, fireballs, etc.) be cleared?
+  clear-entities: true
+  # List of entity types to be excluded from clearing (e.g., PLAYER, ARMOR_STAND, ITEM_FRAME).
+  # A complete list of entity types can be found in the Bukkit documentation.
+  excluded-entities:
+    - PLAYER
+    - VILLAGER
+    - WANDERING_TRADER
+    - LEASH_KNOT
+    - PAINTING
+    - ARMOR_STAND
+  # List of item materials to be excluded from clearing (e.g., DIAMOND, NETHERITE_INGOT).
+  # A complete list of material types can be found in the Bukkit documentation.
+  excluded-items:
+    - DIAMOND
+    - NETHERITE_INGOT
+    - BEDROCK
+    - COMMAND_BLOCK
+
+# --- Performance Optimizations ---
+optimizations:
+  # Redstone Optimization: Attempts to prevent Redstone lag machines.
+  # Limits the rate at which Redstone blocks can be updated.
+  redstone:
+    enabled: true
+
+  # Item Frame and Armor Stand Limiter: Limits the number per chunk and globally.
+  item-frame-armor-stand-limiter:
+    # Armor Stand Limitation
+    armor-stand:
+      enabled: true
+      # Maximum number of Armor Stands per chunk (16x16 blocks).
+      chunk-limit: 10
+      # Maximum global number of Armor Stands on the entire server.
+      global-limit: 100
+    # Item Frame Limitation
+    item-frame:
+      enabled: true
+      # Maximum number of Item Frames per chunk (16x16 blocks).
+      chunk-limit: 10
+      # Maximum global number of Item Frames on the entire server.
+      global-limit: 100
+
+  # Mob Spawn Limiter: Limits the number of mobs that can spawn per area.
+  mob-spawn-limiter:
+    enabled: true
+    # Maximum number of hostile mobs per 4 chunks (2x2 area).
+    hostile-limit-per-4-chunks: 30
+    # Maximum number of passive mobs per 4 chunks (2x2 area).
+    passive-limit-per-4-chunks: 20
+
+  # Hopper Optimization: Attempts to reduce lag caused by hopper chains.
+  # Note: Effective hopper optimization is complex and can affect farm behavior.
+  # The implementation in the listener is a placeholder that shows where the logic could be added.
+  hopper-optimization:
+    enabled: true
+
+  # Farm Limiter: Limits the growth or efficiency of large farms.
+  # The current implementation limits the growth of sugarcane and bamboo in a small radius.
+  # This can be extended to support other farm types and specific limits.
+  farm-limiter:
+    enabled: true
+    # Example limit for sugarcane/bamboo in a 3x3x3 area.
+    # This is a fixed value in the code (20) and would need to be moved to the config if desired.
+    # max-sugarcane-bamboo-density: 20 # Example for future configuration option
+
+  # AI Optimization for Mobs: Reduces the computational load of mob AI.
+  # The current implementation despawns mobs that are too far from players.
+  # Finer AI optimization would require NMS (Net.Minecraft.Server) or specialized APIs.
+  ai-optimization:
+    enabled: true
+    # Despawn distance in blocks (squared for performance). Mobs outside this distance will be despawned.
+    # Default: 64 blocks (64*64 = 4096)
+    despawn-distance-blocks: 64
+    # Interval in seconds at which mobs are checked for player proximity.
+    # Default: 30 seconds
+    check-interval-seconds: 30
+
+  # Performance Warnings: Outputs warnings to the console if server performance falls below thresholds.
+  performance-warnings:
+    enabled: true
+
+  # Chunk Unloading Optimization: Improves the unloading of unused chunks.
+  # Note: This is primarily a server setting (e.g., in paper.yml or spigot.yml).
+  # The plugin can only provide a switch here. Manual chunk unloading by a plugin
+  # is risky and should be handled with caution. For effective optimization,
+  # it is recommended to adjust chunk settings in the server configuration.
+  chunk-unloading-optimization:
+    enabled: true
+
+# Debug Mode: Enables more detailed log outputs in the console for troubleshooting.
+debug-mode: false
