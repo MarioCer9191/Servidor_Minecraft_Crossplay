@@ -23,6 +23,8 @@ auto-clear:
     - LEASH_KNOT
     - PAINTING
     - ARMOR_STAND
+    - ITEM_FRAME
+    
   # List of item materials to be excluded from clearing (e.g., DIAMOND, NETHERITE_INGOT).
   # A complete list of material types can be found in the Bukkit documentation.
   excluded-items:
