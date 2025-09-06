@@ -116,10 +116,13 @@ prevent_ps_home = false
 permission = ""
 
 [event]
-enable = false
+enable = true
+
 on_region_create = [
-    "global_message: &7%player% ha reclamado una parcela épica: %region%"
+    "global_message: &7%player% ha reclamado su primera zona protegida: %region%"
 ]
+
 on_region_destroy = [
+    "console_command: eco give %player% 47500",
     "console_command: say %player% ha destruido la región %region%"
 ]

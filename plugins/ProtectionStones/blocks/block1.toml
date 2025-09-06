@@ -103,6 +103,7 @@ prevent_explode = true
 destroy_region_when_explode = false
 prevent_silk_touch = false
 cost_to_place = 10000.0
+refund_on_destroy_percent = 95.0
 allow_smelt_item = false
 allow_use_in_crafting = false
 
@@ -116,10 +117,13 @@ prevent_ps_home = false
 permission = ""
 
 [event]
-enable = false
+enable = true
+
 on_region_create = [
     "global_message: &7%player% ha reclamado su primera zona protegida: %region%"
 ]
+
 on_region_destroy = [
+    "console_command: eco give %player% 9500",
     "console_command: say %player% ha destruido la región %region%"
 ]
