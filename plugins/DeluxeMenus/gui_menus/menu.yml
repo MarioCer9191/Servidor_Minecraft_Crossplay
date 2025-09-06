@@ -1,0 +1,82 @@
+menu_title: '&6Menu Principal'
+open_command:
+  - menu
+register_command: true
+size: 27
+
+items:
+  casa:
+    material: RED_BED
+    slot: 10
+    display_name: '&eCasa'
+    lore:
+      - '&7Regresa a tu refugio.'
+    left_click_commands:
+      - '[player] home'
+
+  teletransportes:
+    material: ENDER_PEARL
+    slot: 11
+    display_name: '&aTeletransportes'
+    lore:
+      - '&7Explora destinos disponibles.'
+      - '&8&l» &fHaz clic para abrir el mapa.'
+    left_click_commands:
+      - '[player] lwarps'
+
+  trabajos:
+    material: CRAFTING_TABLE
+    slot: 12
+    display_name: '&fTrabajos'
+    lore:
+      - '&7Consulta profesiones.'
+    left_click_commands:
+      - '[player] jobs browse'
+
+  misiones:
+    material: BOOK
+    slot: 13
+    display_name: '&bMisiones'
+    lore:
+      - '&7Revisa tus tareas activas.'
+    left_click_commands:
+      - '[player] dq'
+
+  tienda:
+    material: VILLAGER_SPAWN_EGG
+    slot: 14
+    display_name: '&eTienda'
+    lore:
+      - '&7Abre el catálogo del reino.'
+    left_click_commands:
+      - '[player] dm open tienda_menu'
+
+  dinero:
+    material: EMERALD
+    slot: 15
+    display_name: '&aTu Dinero'
+    lore:
+      - '&7Saldo actual: &f%vault_eco_balance%'
+      - '&8&l» &fHaz clic para más opciones.'
+    left_click_commands:
+      - '[player] money'
+
+  estadisticas:
+    material: PAPER
+    slot: 16
+    display_name: '&fEstadísticas'
+    lore:
+      - '&7Progreso en habilidades.'
+    left_click_commands:
+      - '[player] skills'
+
+  mochila:
+    material: CHEST
+    slot: 17
+    display_name: '&6Mochila'
+    lore:
+      - '&7Inventario adicional para tus aventuras.'
+      - '&7Guarda objetos valiosos y recursos extra.'
+      - '&8&l» &fHaz clic para abrir tu mochila.'
+    left_click_commands:
+      - '[player] backpack'

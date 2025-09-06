@@ -1,0 +1,25 @@
+menu_title: '&aDestinos de La Odisea'
+open_command:
+  - lwarps
+register_command: true
+size: 27
+
+items:
+  lobby:
+    material: CLOCK
+    slot: 2
+    display_name: '&eLobby'
+    lore:
+      - '&7Regresa al punto de inicio.'
+    left_click_commands:
+      - '[player] warp lobby'
+
+  puerto:
+    material: FISHING_ROD
+    slot: 6
+    display_name: '&bPuerto'
+    lore:
+      - '&7Explora el muelle y sus secretos.'
+      - '&8&l» &fHaz clic para viajar al puerto.'
+    left_click_commands:
+      - '[player] warp puerto'

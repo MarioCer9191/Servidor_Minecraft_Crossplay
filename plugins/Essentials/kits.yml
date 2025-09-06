@@ -18,7 +18,7 @@
 
 kits:
   kits:
-  iniciado:
+  forastero:
     delay: 10
     items:
       - leatherhelmet 1 name:&6Capucha_del_Navegante lore:Protege_tus_pensamientos_en_la_travesía
@@ -27,3 +27,67 @@ kits:
       - leatherboots 1 name:&6Botas_de_Caminante lore:Que_tus_pasos_sean_firmes_y_libres
       - bread 5 name:&eRación_de_Viaje lore:Pan_para_el_camino
       - stonepickaxe 1 name:&7Pico_de_Exploración lore:Extrae_tesoros_ocultos_en_la_primera_etapa
+  escudero:
+    delay: 86400
+    items:
+      - chainmail_helmet
+      - chainmail_chestplate
+      - chainmail_leggings
+      - chainmail_boots
+      - stone_sword
+      - stone_pickaxe
+      - stone_axe
+      - iron_ingot:8
+      - bread:16
+      - wheat_seeds:5
+      - shield name:&7Escudo_del_Aprendiz
+  caballero:
+    delay: 172800
+    items:
+      - iron_helmet
+      - iron_chestplate
+      - iron_leggings
+      - iron_boots
+      - iron_sword
+      - iron_pickaxe
+      - iron_axe
+      - iron_ingot:16
+      - bread:32
+      - carrot:10
+      - potato:10
+      - saddle
+  duque:
+    delay: 259200
+    items:
+      - iron_helmet enchant:protection:1
+      - iron_chestplate enchant:protection:1
+      - iron_leggings enchant:protection:1
+      - iron_boots enchant:protection:1
+      - iron_sword enchant:unbreaking:1
+      - iron_pickaxe enchant:efficiency:1 enchant:unbreaking:1
+      - iron_axe enchant:efficiency:1 enchant:unbreaking:1
+      - iron_ingot:32
+      - gold_ingot:16
+      - bread:64
+      - melon_seeds:5
+      - pumpkin_seeds:5
+      - beetroot_seeds:5
+      - banner name:&6Estandarte_del_Duque
+  rey:
+    delay: 604800
+    items:
+      - diamond_helmet enchant:protection:2 enchant:unbreaking:2
+      - diamond_chestplate enchant:protection:2 enchant:unbreaking:2
+      - diamond_leggings enchant:protection:2 enchant:unbreaking:2
+      - diamond_boots enchant:protection:2 enchant:unbreaking:2
+      - diamond_sword enchant:unbreaking:2
+      - diamond_pickaxe enchant:efficiency:2 enchant:fortune:1
+      - diamond_axe enchant:efficiency:2
+      - iron_ingot:64
+      - gold_ingot:32
+      - diamond:5
+      - chorus_fruit:5
+      - nether_wart:10
+      - totem_of_undying
+      - enchanted_book enchant:mending:1
+      - golden_helmet name:&6Corona_del_Reino

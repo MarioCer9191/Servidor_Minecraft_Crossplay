@@ -1,0 +1,176 @@
+menu_title: '&6⚓ Tierras del Reino &8| &7Protecciones'
+open_command:
+  - prote
+register_command: true
+size: 27
+
+items:
+  panel_izq:
+    material: GREEN_STAINED_GLASS_PANE
+    slot: 0
+    display_name: ' '
+  panel_sup:
+    material: YELLOW_STAINED_GLASS_PANE
+    slot: 1
+    display_name: ' '
+  panel_centro:
+    material: GREEN_STAINED_GLASS_PANE
+    slot: 2
+    display_name: ' '
+  panel_der:
+    material: YELLOW_STAINED_GLASS_PANE
+    slot: 3
+    display_name: ' '
+  panel_extra:
+    material: GREEN_STAINED_GLASS_PANE
+    slot: 4
+    display_name: ' '
+  panel_extra2:
+    material: YELLOW_STAINED_GLASS_PANE
+    slot: 5
+    display_name: ' '
+  panel_extra3:
+    material: GREEN_STAINED_GLASS_PANE
+    slot: 6
+    display_name: ' '
+  panel_extra4:
+    material: YELLOW_STAINED_GLASS_PANE
+    slot: 7
+    display_name: ' '
+  panel_extra5:
+    material: GREEN_STAINED_GLASS_PANE
+    slot: 8
+    display_name: ' '
+
+  parcela_basica:
+    material: COAL_ORE
+    slot: 9
+    display_name: '&7⚓ Parcela Básica'
+    lore:
+      - '&8» &7Zona protegida de &f16x16x16 &7bloques.'
+      - '&7Ideal para viajeros que comienzan su travesía.'
+      - '&7Costo: &61000 monedas &8(se cobra al colocarla)'
+      - '&8&l» &fHaz clic para recibir la piedra fundacional.'
+    left_click_commands:
+      - '[player] ps get parcela_basica'
+
+  parcela_intermedia:
+    material: IRON_ORE
+    slot: 10
+    display_name: '&f⚓ Parcela Intermedia'
+    lore:
+      - '&8» &7Zona protegida de &f32x32x32 &7bloques.'
+      - '&7Para navegantes que expanden su legado.'
+      - '&7Costo: &620000 monedas &8(se cobra al colocarla)'
+      - '&8&l» &fHaz clic para recibir la piedra de expansión.'
+    left_click_commands:
+      - '[player] ps get parcela_intermedia'
+
+  parcela_avanzada:
+    material: GOLD_ORE
+    slot: 11
+    display_name: '&e⚓ Parcela Avanzada'
+    lore:
+      - '&8» &7Zona protegida de &f48x48x48 &7bloques.'
+      - '&7Para constructores y líderes de clan.'
+      - '&7Costo: &635000 monedas &8(se cobra al colocarla)'
+      - '&8&l» &fHaz clic para recibir la piedra de dominio.'
+    left_click_commands:
+      - '[player] ps get parcela_avanzada'
+
+  parcela_epica:
+    material: EMERALD_ORE
+    slot: 12
+    display_name: '&2⚓ Parcela Épica'
+    lore:
+      - '&8» &7Zona protegida de &f64x64x64 &7bloques.'
+      - '&7Para asentamientos, fortalezas y leyendas vivientes.'
+      - '&7Costo: &650000 monedas &8(se cobra al colocarla)'
+      - '&8&l» &fHaz clic para recibir la piedra ancestral.'
+    left_click_commands:
+      - '[player] ps get parcela_epica'
+
+  parcela_mitica:
+    material: DIAMOND_ORE
+    slot: 13
+    display_name: '&3⚓ Parcela Mítica'
+    lore:
+      - '&8» &7Zona protegida de &f96x96x96 &7bloques.'
+      - '&7Para héroes que han dejado huella en La Odisea.'
+      - '&7Costo: &675000 monedas &8(se cobra al colocarla)'
+      - '&8&l» &fHaz clic para recibir la piedra legendaria.'
+    left_click_commands:
+      - '[player] ps get parcela_mitica'
+
+  parcela_divina:
+    material: NETHERITE_BLOCK
+    slot: 14
+    display_name: '&d⚓ Parcela Divina'
+    lore:
+      - '&8» &7Zona protegida de &f128x128x128 &7bloques.'
+      - '&7Solo los elegidos pueden reclamar este dominio celestial.'
+      - '&7Costo: &6100000 monedas &8(se cobra al colocarla)'
+      - '&8&l» &fHaz clic para recibir la piedra sagrada.'
+    left_click_commands:
+      - '[player] ps get parcela_divina'
+
+  tutorial:
+    material: BOOK
+    slot: 15
+    display_name: '&b📘 Tutorial de Protecciones'
+    lore:
+      - '&7Consulta el códice de tierras protegidas.'
+      - '&7Aprende cómo colocar, expandir y defender tu zona.'
+      - '&8&l» &fHaz clic para abrir el tutorial.'
+    left_click_commands:
+      - '[player] dm open tutoprote'
+
+  volver:
+    material: ARROW
+    slot: 16
+    display_name: '&7⬅ Volver'
+    lore:
+      - '&8Regresa al menú de categorías.'
+    left_click_commands:
+      - '[player] dm open tienda'
+
+  panel_inf1:
+    material: GREEN_STAINED_GLASS_PANE
+    slot: 17
+    display_name: ' '
+  panel_inf2:
+    material: YELLOW_STAINED_GLASS_PANE
+    slot: 18
+    display_name: ' '
+  panel_inf3:
+    material: GREEN_STAINED_GLASS_PANE
+    slot: 19
+    display_name: ' '
+  panel_inf4:
+    material: YELLOW_STAINED_GLASS_PANE
+    slot: 20
+    display_name: ' '
+  panel_inf5:
+    material: GREEN_STAINED_GLASS_PANE
+    slot: 21
+    display_name: ' '
+  panel_inf6:
+    material: YELLOW_STAINED_GLASS_PANE
+    slot: 22
+    display_name: ' '
+  panel_inf7:
+    material: GREEN_STAINED_GLASS_PANE
+    slot: 23
+    display_name: ' '
+  panel_inf8:
+    material: YELLOW_STAINED_GLASS_PANE
+    slot: 24
+    display_name: ' '
+  panel_inf9:
+    material: GREEN_STAINED_GLASS_PANE
+    slot: 25
+    display_name: ' '
+  panel_inf10:
+    material: YELLOW_STAINED_GLASS_PANE
+    slot: 26
+    display_name: ' '

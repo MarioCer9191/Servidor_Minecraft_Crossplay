@@ -26,7 +26,7 @@ Display:
   # .
   # Only one line is allowed (Unless you enabled ***EXPERIMENTAL*** multi-line)
   Text:
-    - "&b{Mob_Type_Or_Name}: {DynamicColor}{Health_0.0}&f/{MaxHealth_0.0}"
+    - - "&d{Mob_Type_Or_Name} &7⟡ {ScaledSymbols}"
     - If Multiline is enabled, you will see this line
   # Settings for the {DynamicColor} Placeholder
   DynamicColorSettings:

@@ -1,0 +1,17 @@
+menu_title: '&eTienda del Reino'
+open_command:
+  - tienda
+register_command: true
+size: 27
+
+items:
+  protecciones:
+    material: SHIELD
+    slot: 4
+    display_name: '&6Protecciones'
+    lore:
+      - '&7Compra zonas protegidas para tu refugio.'
+      - '&7Evita que otros jugadores modifiquen tu terreno.'
+      - '&8&l» &fHaz clic para ver opciones.'
+    left_click_commands:
+      - '[player] protecciones'
