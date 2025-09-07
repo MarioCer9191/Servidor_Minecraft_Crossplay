@@ -32,7 +32,7 @@
 messages:
     # A locale code for the locale you want to use by default for messages and commands.
     # Has to be a string separated by an underscore.
-    locale: en
+    locale: es
     # A locale code for the messages and commands sent to the console.
     # This is useful if you want to use a different locale for the console than for players.
     # We recommend keeping this at the default value because we mostly only provide support in English.
@@ -78,7 +78,7 @@ commands:
     # A value of 'false' will disable this behaviour, and players will need to be given the permission explicitly.
     # This is because some platforms (like BungeeCord) do not have a default permission system.
     # If your platform supports default permissions, this option is ignored.
-    forceDefaultPermissions: true
+    forceDefaultPermissions: false
     # Players cooldown in seconds when changing skins (set to 0 to disable).
     # SkinErrorCooldown is used when an error or invalid url occurs.
     # Can be bypassed with 'skinsrestorer.bypasscooldown'.
@@ -308,13 +308,13 @@ advanced:
     # <!! Warning !!>
     # Enabling this will stop SkinsRestorer to change skins on join.
     # Handy for when you want run /skin apply to apply skin after texturepack popup
-    disableOnJoinSkins: false
+    disableOnJoinSkins: true
     # <!! Warning !!>
     # This enables the PaperMC join event integration that allows instant skins on join.
     # It is recommended over the fallback listener because it is smoother and should not lag the server.
     # It also fixes all resource pack skin apply issues.
     # If your players are experiencing extremely long loading screens, try disabling this.
-    enablePaperJoinListener: true
+    enablePaperJoinListener: false
     # <!! Warning !!>
     # This is a very dangerous feature that should only be used if you know what you are doing.
     # Instead of resending player skins to other players by hiding and shadowing them, we will teleport them to a far away location and back
