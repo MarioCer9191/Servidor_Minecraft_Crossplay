@@ -1,0 +1,76 @@
+tasks:
+  minar_piedra:
+    type: blockbreakcertain
+    amount: 10
+    block: STONE
+
+  minar_carbon:
+    type: blockbreakcertain
+    amount: 6
+    block: COAL_ORE
+
+  minar_hierro:
+    type: blockbreakcertain
+    amount: 4
+    block: IRON_ORE
+
+display:
+  name: "&6Eco de la Caverna"
+  type: STONE
+  lore-normal:
+    - "&7Las profundidades susurran secretos antiguos..."
+    - "&6Explora una cueva cercana y extrae sus riquezas."
+    - ""
+    - "&7Objetivos:"
+    - "&6- Minar &f10 bloques de piedra"
+    - "&6- Minar &f6 vetas de carbón"
+    - "&6- Minar &f4 vetas de hierro"
+    - ""
+    - "&7Consejo:"
+    - "&a- Lleva antorchas y una herramienta confiable"
+    - ""
+    - "&7Recompensas:"
+    - "&6- $750"
+    - "&6- 16 antorchas"
+    - "&6- 1 pico de piedra encantado"
+    - "&6- Un conjunto de herramientas para sobrevivir los primeros días"
+
+  lore-started:
+    - ""
+    - "&7Progreso actual:"
+    - "&6- Piedra: {minar_piedra:progress}/10"
+    - "&6- Carbón: {minar_carbon:progress}/6"
+    - "&6- Hierro: {minar_hierro:progress}/4"
+
+startstring:
+  - "&7Te adentras en la caverna..."
+  - "&a* &fLas sombras guardan minerales y misterios."
+
+rewardstring:
+  - "&a* &aHas recibido $750"
+  - "&a* &a16 antorchas"
+  - "&a* &a1 pico encantado"
+  - "&a* &aUn conjunto de herramientas para sobrevivir los primeros días"
+
+rewards:
+  - eco give {player} 750
+  - kit eo2ec
+
+placeholders:
+  description: "&7Explora una cueva y extrae piedra, carbón y hierro."
+  progress: "&6- {minar_piedra:progress}/10 piedra, {minar_carbon:progress}/6 carbón, {minar_hierro:progress}/4 hierro"
+
+progress-placeholders:
+  minar_piedra: "&f{minar_piedra:progress}/10 &7bloques de piedra"
+  minar_carbon: "&f{minar_carbon:progress}/6 &7vetas de carbón"
+  minar_hierro: "&f{minar_hierro:progress}/4 &7vetas de hierro"
+
+options:
+  category: empezando_odisea
+  repeatable: false
+  cooldown:
+    enabled: true
+    time: 1440
+  sort-order: 2
+  requires:
+    - despertaraventurero

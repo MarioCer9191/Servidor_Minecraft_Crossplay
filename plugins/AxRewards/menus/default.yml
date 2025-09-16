@@ -1,0 +1,58 @@
+title: "&0&lBendiciones Gratuitas"
+rows: 1
+type: CHEST
+
+open-commands:
+  - "recompensas"
+  - "bendiciones"
+
+close:
+  slot: 8
+  material: "BARRIER"
+  name: "&#FFEE00&lCerrar"
+  lore:
+    - " "
+    - "&#FFEE00&lClick &#DDDDDD» &#FFEEAACerrar el menú"
+
+llave-diaria-gratis:
+  slot: 0
+  cooldown: 86400  # 24 horas en segundos
+  claim-commands:
+    - "crate key give %player_name% recompensa_diaria"
+  claimable:
+    material: TRIPWIRE_HOOK
+    name: "&#FFEE00&lLlave Diaria Gratis"
+    lore:
+      - " "
+      - "&#FFEE00Recompensas:"
+      - " &7- &f1x Llave de la Crate"
+      - " "
+      - "&#FFEE00&lClick &#DDDDDD» &#FFEEAAReclamar"
+  unclaimable:
+    material: MINECART
+    name: "&#FFEE00&lLlave Diaria Gratis"
+    lore:
+      - " "
+      - "&#FFEE00Tiempo restante &#DDDDDD» &#FFEEAA%time%"
+
+hefesto-key-semanal:
+  slot: 1
+  cooldown: 604800  # 7 días en segundos
+  claim-commands:
+    - "crate key give %player_name% hefestokey 1"
+  claimable:
+    material: TRIPWIRE_HOOK
+    name: "&#FF4500&lLlave de Hefesto"
+    lore:
+      - " "
+      - "&#FFEE00Recompensa semanal exclusiva."
+      - " &7- &fUsa esta llave para abrir la &6Crate de Hefesto"
+      - " &7- &fSolo disponible cada 7 días"
+      - " "
+      - "&#FFEE00&lClick &#DDDDDD» &#FFEEAAReclamar"
+  unclaimable:
+    material: MINECART
+    name: "&#FF4500&lLlave de Hefesto"
+    lore:
+      - " "
+      - "&#FFEE00Tiempo restante &#DDDDDD» &#FFEEAA%time%"
