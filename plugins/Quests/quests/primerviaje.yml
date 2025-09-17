@@ -1,0 +1,61 @@
+display:
+  name: "&ePrimer &6Viaje"
+  type: COMPASS
+  lore-normal:
+    - "&7Todo héroe da su primer paso..."
+    - "&8Camina por el mundo y deja que el viento te guíe."
+    - ""
+    - "&7Objetivo:"
+    - "&6- Caminar &f150 bloques"
+    - ""
+    - "&7Consejo:"
+    - "&a- Explora zonas seguras para evitar peligros"
+    - "&a- El viaje es tan valioso como el destino"
+    - ""
+    - "&7Recompensas:"
+    - "&6- $300"
+    - "&6- Kit de explorador"
+    - "&6- Título: Explorador Novato"
+
+  lore-started:
+    - ""
+    - "&7Progreso actual:"
+    - "&6- Distancia recorrida: {primer_viaje:progress}/150 bloques"
+
+startstring:
+  - "&7Tu viaje comienza..."
+  - "&a* &fCamina y deja que el mundo te hable."
+
+rewardstring:
+  - "&a* &aHas recibido $300"
+  - "&a* &aKit de explorador"
+  - "&a* &aTítulo desbloqueado: &eExplorador Novato"
+
+tasks:
+  primer_viaje:
+    type: walking
+    distance: 150
+    worlds:
+      - "world"
+
+rewards:
+  - eco give {player} 300
+  - kit eo6pv {player}
+  - msg {player} &aHas comenzado tu viaje. El mundo te observa.
+  - title give {player} explorador_novato
+
+placeholders:
+  description: "&7Camina 150 bloques para iniciar tu viaje."
+  progress: "&6- {primer_viaje:progress}/150 bloques recorridos"
+
+progress-placeholders:
+  primer_viaje: "&f{primer_viaje:progress}/150 &7bloques caminados"
+
+options:
+  category: empezando_odisea
+  repeatable: false
+  cooldown:
+    enabled: true
+    time: 1440
+  sort-order: 6
+  requires: susurrodelbosque

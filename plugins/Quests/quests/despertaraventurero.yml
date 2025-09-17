@@ -1,0 +1,58 @@
+tasks:
+  romper_madera:
+    type: "blockbreak"
+    amount: 15
+    filter: "minecraft:*_log"
+
+
+display:
+  name: "&6El despertar del aventurero"
+  type: "OAK_LOG"
+  lore-normal:
+    - "&7Todo buen aventurero comienza con sus propias manos..."
+    - "&6Rompe troncos de roble para demostrar tu iniciativa"
+    - ""
+    - "&7Objetivo:"
+    - "&6- Romper &f15 troncos de roble"
+    - ""
+    - "&7Consejo:"
+    - "&a- Usa un &fHacha de madera &apara facilitar la tarea (opcional)"
+    - ""
+    - "&7Recompensas:"
+    - "&6- $500"
+    - "&6- 10 manzanas"
+    - "&6- 5 filetes cocinados"
+
+  lore-started:
+    - ""
+    - "&7Progreso actual:"
+    - "&6- {romper_madera:progress}/15 troncos rotos"
+
+startstring:
+  - "&7Tu aventura comienza..."
+  - " &a* &fRompe madera para demostrar tu valor"
+
+rewardstring:
+  - " &a* &aHas recibido $500"
+  - " &a* &a10 manzanas"
+  - " &a* &a5 filetes cocinados"
+
+rewards:
+  - "eco give {player} 500"
+  - "give {player} apple 10"
+  - "give {player} cooked_beef 5"
+
+placeholders:
+  description: "&7Rompe &f15 troncos de roble &7para comenzar tu aventura."
+  progress: "&6- {romper_madera:progress}/15 troncos rotos"
+
+progress-placeholders:
+  romper_madera: "&f{romper_madera:progress}/15 &7troncos rotos"
+
+options:
+  category: "empezando_odisea"
+  repeatable: false
+  cooldown:
+    enabled: true
+    time: 1440
+  sort-order: 1
