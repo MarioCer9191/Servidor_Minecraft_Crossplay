@@ -1,0 +1,42 @@
+# 🔧 Archivos binarios
+*.jar
+*.exe
+*.dll
+
+# 🗃️ Carpetas de datos y caché
+plugins/**/data/
+plugins/**/db/
+plugins/**/database/
+plugins/**/logs/
+plugins/**/backups/
+plugins/**/worlds/
+plugins/**/cache/
+plugins/**/stats/
+plugins/**/schematics/
+plugins/**/storage/
+plugins/**/userdata/
+plugins/**/usercache/
+
+# 📄 Archivos sensibles del servidor raíz
+server.properties
+banned-players.json
+banned-ips.json
+ops.json
+whitelist.json
+usercache.json
+eula.txt
+
+# 🧹 Archivos temporales y comprimidos
+*.zip
+*.bak
+*.tmp
+*.lck
+
+# 🧩 Archivos de idioma
+plugins/**/*lang*.yml
+plugins/**/*lang*.yaml
+plugins/**/*messages*.yml
+plugins/**/*messages*.yaml
+
+# 🧠 Configuraciones locales
+.vscode/
