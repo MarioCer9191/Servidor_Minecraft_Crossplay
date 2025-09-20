@@ -40,3 +40,4 @@ plugins/**/*messages*.yaml
 
 # 🧠 Configuraciones locales
 .vscode/
+libraries/
