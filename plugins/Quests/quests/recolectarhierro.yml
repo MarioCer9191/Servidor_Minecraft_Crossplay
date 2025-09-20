@@ -1,0 +1,58 @@
+tasks:
+  recolectar_hierro:
+    type: blockbreakcertain
+    amount: 28
+    block: IRON_ORE
+
+display:
+  name: "&7Forjando el Legado"
+  type: IRON_INGOT
+  lore-normal:
+    - "&7El hierro no solo se extrae... se conquista."
+    - "&6Reúne 28 lingotes de hierro para demostrar tu temple."
+    - ""
+    - "&7Objetivo:"
+    - "&6- Minar &f vetas de hierro"
+    - ""
+    - "&7Consejo:"
+    - "&a- Puedes fundir mineral o comerciar con aldeanos"
+    - "&a- El legado se forja con esfuerzo, no con suerte"
+    - ""
+    - "&7Recompensas:"
+    - "&6- $1000"
+    - "&6- Kit de armadura completa de hierro"
+    - "&6- El respeto de los herreros ancestrales"
+
+  lore-started:
+    - ""
+    - "&7Progreso actual:"
+    - "&6- Hierro recolectado: {recolectar_hierro:progress}/28"
+
+startstring:
+  - "&7Tu viaje comienza en la fragua del destino..."
+  - "&a* &fEl hierro llama a los valientes."
+
+rewardstring:
+  - "&a* &aHas recibido $1000"
+  - "&a* &aKit de armadura completa de hierro"
+  - "&a* &aTu nombre resuena en las forjas del mundo"
+
+rewards:
+  - eco give {player} 1000
+  - kit eo3rh {player}
+
+placeholders:
+  description: "&7Reúne 28 lingotes de hierro para demostrar tu temple."
+  progress: "&6- {recolectar_hierro:progress}/28 lingotes de hierro"
+
+progress-placeholders:
+  recolectar_hierro: "&f{recolectar_hierro:progress}/28 &7lingotes de hierro"
+
+options:
+  category: empezando_odisea
+  repeatable: false
+  cooldown:
+    enabled: true
+    time: 1440
+  sort-order: 3
+  requires: ecocaverna

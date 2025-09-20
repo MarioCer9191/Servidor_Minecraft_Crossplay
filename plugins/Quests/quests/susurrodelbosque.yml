@@ -1,0 +1,75 @@
+display:
+  name: "&2El Susurro del &aBosque"
+  type: OAK_LEAVES
+  lore-normal:
+    - "&7Los árboles antiguos guardan secretos..."
+    - "&8Rompe sus hojas para recolectar su esencia."
+    - ""
+    - "&7Objetivo:"
+    - "&6- Romper &f20 bloques de hojas"
+    - "&8  (de cualquier tipo)"
+    - ""
+    - "&7Consejo:"
+    - "&a- Usa herramientas con Fortuna para obtener más ítems"
+    - "&a- Las hojas también pueden soltar manzanas"
+    - ""
+    - "&7Recompensas:"
+    - "&6- $500"
+    - "&6- 3 manzanas doradas"
+    - "&6- Kit de pociones básicas"
+
+  lore-started:
+    - ""
+    - "&7Progreso actual:"
+    - "&6- Hojas rotas: {susurro_bosque:progress}/20"
+
+startstring:
+  - "&7El bosque te observa..."
+  - "&a* &fRompe sus hojas y escucha su susurro."
+
+rewardstring:
+  - "&a* &aHas recibido $500"
+  - "&a* &a3 manzanas doradas"
+  - "&a* &aKit de pociones básicas"
+
+tasks:
+  susurro_bosque:
+    type: blockbreak
+    amount: 20
+    blocks:
+      - OAK_LEAVES
+      - BIRCH_LEAVES
+      - SPRUCE_LEAVES
+      - JUNGLE_LEAVES
+      - ACACIA_LEAVES
+      - DARK_OAK_LEAVES
+      - MANGROVE_LEAVES
+      - CHERRY_LEAVES
+
+rewards:
+  - eco give {player} 500
+  - give {player} golden_apple 3
+  - give {player} WHEAT_SEEDS 3
+  - give {player} CARROT 3
+  - give {player} POTATO 3
+  - give {player} BEETROOT_SEEDS 3
+  - give {player} MELON_SEEDS 3
+  - give {player} PUMPKIN_SEEDS 3
+  - kit eo5sb {player}
+  - msg {player} &aEl bosque te ha otorgado su bendición. Cuídalo como él te ha cuidado.
+
+placeholders:
+  description: "&7Rompe 20 bloques de hojas para recolectar su esencia."
+  progress: "&6- {susurro_bosque:progress}/20 hojas rotas"
+
+progress-placeholders:
+  susurro_bosque: "&f{susurro_bosque:progress}/20 &7hojas recolectadas"
+
+options:
+  category: empezando_odisea
+  repeatable: false
+  cooldown:
+    enabled: true
+    time: 1440
+  sort-order: 5
+  requires: purgacrepusculo

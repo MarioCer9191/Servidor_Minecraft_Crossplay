@@ -1,0 +1,168 @@
+menu_title: '&6Menu Principal'
+open_command:
+  - menu
+register_command: true
+size: 27
+
+items:
+
+  # 🏠 Terreno y protección
+  casa:
+    material: RED_BED
+    slot: 0
+    display_name: '&e¿Cómo reclamar tu terreno?'
+    lore:
+      - '&7Presiona este botón para más información'
+      - '&7sobre cómo reclamar tus parcelas, reinos o terrenos.'
+      - '&8&l» &fAprende a proteger tu espacio en el mundo.'
+    left_click_commands:
+      - '[player] terreno'
+
+  ascenso:
+    material: SHIELD
+    slot: 1
+    display_name: '&6Ascenso de Rango'
+    lore:
+      - '&7Consulta tu rango actual y asciende si estás listo.'
+      - '&8&l» &fHaz clic para abrir el menú de rangos.'
+    left_click_commands:
+      - '[player] rank'
+
+  # ⚰️ Muerte y regreso
+  tumba:
+    material: BONE
+    slot: 2
+    display_name: '&cÚltima Muerte'
+    lore:
+      - '&7Regresa al lugar donde caíste...'
+      - '&8Como el hueso del regreso, vuelve a tu tumba.'
+      - '&8&l» &fHaz clic para teletransportarte.'
+    left_click_requirement:
+      requirements:
+        tiene_dinero:
+          type: money
+          amount: 1500
+      deny_commands:
+        - 'msg %player_name% &cNecesitas $1500 para usar este servicio.'
+    left_click_commands:
+      - '[console] eco take %player_name% 1500'
+      - '[player] axgraves tp'
+
+  # 🧭 Navegación y comunicación
+  teletransportes:
+    material: ENDER_PEARL
+    slot: 3
+    display_name: '&aTeletransportes'
+    lore:
+      - '&7Explora destinos disponibles.'
+      - '&8&l» &fHaz clic para abrir el mapa.'
+    left_click_commands:
+      - '[player] lwarps'
+
+  chat_proximidad:
+    material: GOAT_HORN
+    slot: 4
+    display_name: '&dChat de Proximidad'
+    lore:
+      - '&7Activa el sistema de vinculación con Discord.'
+      - '&7Recibirás un código en el chat que debes enviar'
+      - '&7al bot llamado &f"Odiseo"&7 en el servidor de Discord.'
+      - '&8&l» &fHaz clic para comenzar.'
+    left_click_commands:
+      - '[player] mdiscord'
+
+  # ⚒️ Progresión y economía
+  trabajos:
+    material: CRAFTING_TABLE
+    slot: 5
+    display_name: '&fTrabajos'
+    lore:
+      - '&7Consulta profesiones disponibles.'
+    left_click_commands:
+      - '[player] jobs browse'
+
+  misiones:
+    material: BOOK
+    slot: 6
+    display_name: '&bMisiones Diarias'
+    lore:
+      - '&7Revisa tus tareas activas del día.'
+    left_click_commands:
+      - '[player] dq'
+
+  misiones_principales:
+    material: WRITABLE_BOOK
+    slot: 7
+    display_name: '&9Misiones Principales'
+    lore:
+      - '&7Además de las misiones diarias, puedes embarcarte en'
+      - '&7misiones principales que forman parte de la &eOdisea&7.'
+      - '&7Obtén recompensas valiosas y descubre secretos del mundo.'
+      - '&8&l» &fHaz clic para abrir el menú de misiones épicas.'
+    left_click_commands:
+      - '[player] quests'
+
+  tienda:
+    material: VILLAGER_SPAWN_EGG
+    slot: 8
+    display_name: '&eTienda'
+    lore:
+      - '&7Abre el catálogo del reino.'
+    left_click_commands:
+      - '[player] tienda'
+
+  dinero:
+    material: EMERALD
+    slot: 9
+    display_name: '&aTu Dinero'
+    lore:
+      - '&7Saldo actual: &f%vault_eco_balance%'
+      - '&8&l» &fHaz clic para más opciones.'
+    left_click_commands:
+      - '[player] money'
+
+  estadisticas:
+    material: PAPER
+    slot: 10
+    display_name: '&fEstadísticas'
+    lore:
+      - '&7Progreso en habilidades.'
+    left_click_commands:
+      - '[player] skills'
+
+  mochila:
+    material: CHEST
+    slot: 11
+    display_name: '&6Mochila'
+    lore:
+      - '&7Inventario adicional para tus aventuras.'
+      - '&7Guarda objetos valiosos y recursos extra.'
+      - '&8&l» &fHaz clic para abrir tu mochila.'
+    left_click_commands:
+      - '[player] minepacks:backpack'
+
+  recompensas_diarias:
+    material: ENDER_CHEST
+    slot: 12
+    display_name: "&#FFD700Bendiciones Diarias"
+    lore:
+      - " "
+      - "&7Obtén llaves que abren un cofre especial en el &bLobby."
+      - "&fCada llave da una recompensa aleatoria: esmeraldas, diamantes, oro y más..."
+      - "&fPuedes acumular llaves, pero debes ir al &bLobby &fpara usarlas."
+      - " "
+      - "&7Click &8» &fAbrir menú de recompensas"
+    left_click_commands:
+      - "[player] axrewards open"
+
+  misiones_principales:
+    material: WRITABLE_BOOK
+    slot: 13
+    display_name: '&9Misiones Principales'
+    lore:
+      - '&7Además de las misiones diarias, puedes embarcarte en'
+      - '&7misiones principales que forman parte de la &eOdisea&7.'
+      - '&7Obtén recompensas valiosas y descubre secretos del mundo.'
+      - '&8&l» &fHaz clic para abrir el menú de misiones épicas.'
+    left_click_commands:
+      - '[player] quests'

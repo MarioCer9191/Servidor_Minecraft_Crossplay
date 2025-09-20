@@ -1,0 +1,67 @@
+display:
+  name: "&cPurga del &5Crepúsculo"
+  type: ZOMBIE_HEAD
+  lore-normal:
+    - "&7Los espíritus del mundo antiguo emergen al caer el sol..."
+    - "&8Derrota a las criaturas que acechan en la oscuridad"
+    - ""
+    - "&7Objetivo:"
+    - "&6- Eliminar &f15 mobs oscuros"
+    - "&8  (Zombis, esqueletos y arañas)"
+    - ""
+    - "&7Consejo:"
+    - "&a- Explora cuevas y zonas nocturnas"
+    - "&a- Usa armamento encantado para sobrevivir"
+    - ""
+    - "&7Recompensas:"
+    - "&6- $1500"
+    - "&6- Kit de combate temático"
+    - "&6- Reconocimiento por enfrentar la oscuridad"
+
+  lore-started:
+    - ""
+    - "&7Progreso actual:"
+    - "&6- Criaturas purgadas: {purga_crepusculo:progress}/15"
+
+startstring:
+  - "&7La oscuridad se acerca..."
+  - "&a* &fSolo los valientes enfrentan el crepúsculo."
+
+rewardstring:
+  - "&a* &aHas recibido $1500"
+  - "&a* &aKit de combate temático"
+  - "&a* &aEl mundo reconoce tu valor en la purga"
+
+tasks:
+  purga_crepusculo:
+    type: mobkilling
+    amount: 15
+    mobs:
+      - ZOMBIE
+      - SKELETON
+      - SPIDER
+      - CREEPER
+    hostile: true
+    worlds:
+      - "world"
+
+rewards:
+  - eco give {player} 1500
+  - kit eo4pc {player}
+  - msg {player} &aHas enfrentado la oscuridad. El mundo te reconoce.
+
+placeholders:
+  description: "&7Derrota 15 mobs oscuros para disipar el crepúsculo."
+  progress: "&6- {purga_crepusculo:progress}/15 mobs derrotados"
+
+progress-placeholders:
+  purga_crepusculo: "&f{purga_crepusculo:progress}/15 &7criaturas oscuras purgadas"
+
+options:
+  category: empezando_odisea
+  repeatable: false
+  cooldown:
+    enabled: true
+    time: 1440
+  sort-order: 4
+  requires: forjandolegado

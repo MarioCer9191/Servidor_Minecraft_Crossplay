@@ -1,0 +1,77 @@
+display:
+  name: "&bFundamentos del &fValor"
+  type: DIAMOND_PICKAXE
+  lore-normal:
+    - "&7El mundo exige más que fuerza..."
+    - "&8Demuestra tu dominio sobre la tierra, la vida y el mineral."
+    - ""
+    - "&7Objetivo:"
+    - "&6- Matar &f4 vacas"
+    - "&6- Romper &f10 cañas de azúcar"
+    - "&6- Minar &f16 vetas de diamante"
+    - ""
+    - "&7Consejo:"
+    - "&a- Usa herramientas encantadas para acelerar el progreso"
+    - "&a- Las vacas suelen aparecer en llanuras"
+    - "&a- Las cañas crecen cerca del agua"
+    - ""
+    - "&7Recompensas:"
+    - "&6- $1000"
+    - "&6- Kit de aventurero versátil"
+    - "&6- Título: &bIniciado del Valor"
+
+  lore-started:
+    - ""
+    - "&7Progreso actual:"
+    - "&6- Vacas: {fv_vacas:progress}/4"
+    - "&6- Cañas: {fv_canas:progress}/10"
+    - "&6- Diamantes: {fv_diamantes:progress}/16"
+
+startstring:
+  - "&7El mundo te pone a prueba..."
+  - "&a* &fDomina la tierra, la vida y el mineral."
+
+rewardstring:
+  - "&a* &aHas recibido $1000"
+  - "&a* &aKit de aventurero versátil"
+  - "&a* &aTítulo desbloqueado: &bIniciado del Valor"
+
+tasks:
+  fv_vacas:
+    type: mobkilling
+    amount: 4
+    mob: COW
+
+  fv_canas:
+    type: blockbreak
+    amount: 10
+    block: SUGAR_CANE
+
+  fv_diamantes:
+    type: blockbreak
+    amount: 16
+    block: DIAMOND_ORE
+
+rewards:
+  - eco give {player} 1000
+  - kit eo8fv {player}
+  - msg {player} &aTu versatilidad ha sido reconocida. El mundo te respeta.
+  - title give {player} iniciado_valor
+
+placeholders:
+  description: "&7Mata 4 vacas, rompe 10 cañas y mina 16 vetas de diamante."
+  progress: "&6- Vacas: {fv_vacas:progress}/4 | Cañas: {fv_canas:progress}/10 | Diamantes: {fv_diamantes:progress}/16"
+
+progress-placeholders:
+  fv_vacas: "&f{fv_vacas:progress}/4 &7vacas derrotadas"
+  fv_canas: "&f{fv_canas:progress}/10 &7cañas recolectadas"
+  fv_diamantes: "&f{fv_diamantes:progress}/16 &7vetas minadas"
+
+options:
+  category: empezando_odisea
+  repeatable: false
+  cooldown:
+    enabled: true
+    time: 1440
+  sort-order: 8
+  requires: primerviaje

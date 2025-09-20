@@ -1,0 +1,21 @@
+location: world:214.498:115.938:1088.237
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+  - lines:
+      - content: "#ICON: DIAMOND_SWORD {Enchantments:[{id:sharpness,lvl:5}]}"
+        height: 0.3
+      - content: "&6&lTu aventura comienza ahora..."
+        height: 0.3
+      - content: "&7Has despertado en el corazón del lobby, pero el mundo te espera."
+        height: 0.3
+      - content: "&eExplora tierras salvajes, construye tu hogar, deja tu huella."
+        height: 0.3
+      - content: "&8&l» &fSolo aléjate un poco... y el terreno será tuyo."
+        height: 0.3
+      - content: "&7La Odisea no se vive en el centro, sino en los rincones que conquistas."
+    actions: {}

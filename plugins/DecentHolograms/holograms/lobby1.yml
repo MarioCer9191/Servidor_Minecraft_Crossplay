@@ -1,0 +1,26 @@
+location: world:211.525:118.000:1072.523
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+  - lines:
+      - content: "#ICON: DIAMOND_SWORD {Enchantments:[{id:sharpness,lvl:5}]}"
+        height: 0.3
+      - content: "&b&lBienvenido a la &9&lOdisea"
+        height: 0.3
+      - content: "&7Explora, construye, mina, asesina mobs..."
+        height: 0.3
+      - content: "&7Haz click para abrir el menú principal."
+        height: 0.3
+      - content: "&8&l» &fComando: &e/menu"
+        height: 0.3
+      - content: "&7Pásate por el lobby, encontrarás tutoriales"
+        height: 0.3
+      - content: "&7y cosas importantes para tu aventura."
+        height: 0.3
+    actions:
+      LEFT:
+        - "COMMAND:/menu"
