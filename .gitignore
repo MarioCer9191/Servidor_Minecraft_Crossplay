@@ -41,3 +41,13 @@ plugins/**/*messages*.yaml
 # 🧠 Configuraciones locales
 .vscode/
 libraries/
+
+# ❌ Ignorar mundos del servidor
+world/
+world_nether/
+world_the_end/
+world_kattersstructures_deep_blue/
+
+# ❌ Ignorar carpetas de logs
+logs/
+plugins/**/logs/
