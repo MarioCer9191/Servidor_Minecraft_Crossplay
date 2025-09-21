@@ -16,6 +16,8 @@ plugins/**/schematics/
 plugins/**/storage/
 plugins/**/userdata/
 plugins/**/usercache/
+plugins/Quests/playerdata/
+
 
 # 📄 Archivos sensibles del servidor raíz
 server.properties
